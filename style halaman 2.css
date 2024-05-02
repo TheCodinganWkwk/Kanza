@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.carousel {
+    width: 60%; /* Lebar carousel */
+    margin-right: 20px;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+}
+
+.summary {
+    background-color: #ffe6f1; /* Warna latar belakang pink */
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%; /* Lebar area ringkasan */
+}
+
+h2 {
+    color: #ff69b4; /* Warna judul */
+}
+
+p {
+    color: #333; /* Warna teks */
+}
+
+/* Animasi carousel */
+.carousel img {
+    max-width: 100%;
+    height: auto;
+    animation: slide 5s infinite;
+}
+
+@keyframes slide {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; }
+}
